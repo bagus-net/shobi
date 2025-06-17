@@ -40,61 +40,39 @@
 
   <header id="header" class="header fixed-top">
 
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="topbar d-flex align-items-center" style="background-color: #8b0000;">
+      <div class="container d-flex justify-content-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com" style="color: white;">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color: white;">+1 5589 55488 55</span></i>
         </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <div class="social-links d-flex align-items-center">
+          <a href="#" class="twitter" style="color: white;"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook" style="color: white;"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram" style="color: white;"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin" style="color: white;"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
     </div><!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-center flex-column">
-
-      
+    <div class="branding d-flex align-items-center flex-column" style="background-color: #a40000; padding: 10px 0; width: 100%;">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Impact</h1>
-          <span>.</span>
+        <a href="index.html" class="logo d-flex align-items-center" style="color: white; font-weight: bold; font-size: 24px; text-decoration: none;">
+          Dafi Islamic Festival
         </a>
 
         <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Home<br></a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
+          <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+            <li style="margin-right: 20px;"><a href="#hero" class="active" style="color: white; text-decoration: none;">Home</a></li>
+            <li style="margin-right: 20px;"><a href="#about" style="color: white; text-decoration: none;">About</a></li>
+            <li style="margin-right: 20px;"><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
+            <li style="margin-right: 20px;"><a href="#portfolio" style="color: white; text-decoration: none;">Portfolio</a></li>
+            <li style="margin-right: 20px;"><a href="#team" style="color: white; text-decoration: none;">Team</a></li>
+            <li style="margin-right: 20px;"><a href="blog.html" style="color: white; text-decoration: none;">Blog</a></li>
+            <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list" style="color: white;"></i>
         </nav>
 
       </div>
@@ -107,18 +85,19 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section accent-background">
+      
 
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5 justify-content-center">
           <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center text-center">
-            <img src="{{ asset('assets/img/welcome-dafi.png') }}" alt="Welcome Dafi Islamic Festival" class="header-welcome-img animate-fade-in-scale" style="max-width: 100%; height: auto; max-height: 600px;" />
-            <a href="#about" class="btn-get-started mt-4">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center mt-2"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <img src="{{ asset('assets/img/welcome-dafi.png') }}" alt="Welcome Dafi Islamic Festival" class="header-welcome-img animate-fade-in-scale" />
+            {{-- <a href="#about" class="btn-get-started mt-4">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center mt-4"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> --}}
           </div>
         </div>
       </div>
 
-      <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
+      {{-- <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
         <div class="container position-relative">
           <div class="row gy-4 mt-5">
 
@@ -148,7 +127,7 @@
                 <div class="icon"><i class="bi bi-command"></i></div>
                 <h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
               </div>
-            </div><!--End Icon Box -->
+            </div><!--End Icon Box --> --}}
 
           </div>
         </div>
@@ -1193,21 +1172,7 @@
   <script src="assets/js/main.js"></script>
 
   <style>
-    .header-welcome-img {
-      max-width: 300px;
-      margin-bottom: 1rem;
-    }
 
-    @keyframes fadeInScale {
-      0% {
-        opacity: 0;
-        transform: scale(0.8);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
 
     .animate-fade-in-scale {
       animation: fadeInScale 1.5s ease forwards;

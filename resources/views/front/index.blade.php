@@ -42,7 +42,7 @@
 
     <div class="topbar d-flex align-items-center" style="background-color: #8b0000;">
       <div class="container d-flex justify-content-between">
-        <div class="contact-info d-flex align-items-center">
+        {{-- <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com" style="color: white;">contact@example.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color: white;">+1 5589 55488 55</span></i>
         </div>
@@ -51,7 +51,7 @@
           <a href="#" class="facebook" style="color: white;"><i class="bi bi-facebook"></i></a>
           <a href="#" class="instagram" style="color: white;"><i class="bi bi-instagram"></i></a>
           <a href="#" class="linkedin" style="color: white;"><i class="bi bi-linkedin"></i></a>
-        </div>
+        </div> --}}
       </div>
     </div><!-- End Top Bar -->
 
@@ -82,11 +82,13 @@
   </header>
 
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section accent-background">
       
-
+      <!-- Gambar Light Effect -->
+      <img src="{{ asset('assets/img/light.png') }}" alt="Light Effect" class="light-effect animate-fade-in-scale" />
+      <!-- Gambar Indonesia Background -->
+      <img src="{{ asset('assets/img/indonesia.png') }}" alt="Indonesia Background" class="indonesia-effect animate-fade-in-scale" />
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5 justify-content-center">
           <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center text-center">
@@ -95,6 +97,7 @@
             <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center mt-4"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> --}}
           </div>
         </div>
+      </div>
       </div>
 
       {{-- <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">

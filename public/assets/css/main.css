@@ -17,6 +17,63 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
+.header-welcome-img {
+    width: 700%; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Pertahankan rasio aspek */
+    max-width: 1920px; /* Atur lebar maksimum jika diperlukan */
+    margin-bottom: 1rem; /* Ruang di bawah gambar */
+    position: relative; /* Pastikan di atas gambar latar belakang */
+    z-index: 2; /* Di atas gambar light dan indonesia */
+    animation: fadeIn 1s ease forwards; /* Tambahkan animasi */
+    animation-delay: 1.5s; /* Delay sebelum animasi dimulai */
+}
+
+@media (max-width: 768px) {
+  .header-welcome-img {
+    max-width: 100%; /* Allow the image to be full width on smaller screens */
+  }}
+
+.light-effect {
+    position: absolute;
+    top: -20%; /* Atur posisi sesuai kebutuhan */
+    left: -20%; /* Atur posisi sesuai kebutuhan */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menutupi seluruh area */
+    z-index: 1; /* Di atas latar belakang tetapi di bawah konten */
+    opacity: 0.8; /* Atur transparansi sesuai kebutuhan */
+    animation: fadeIn 1s ease forwards; /* Tambahkan animasi */
+    animation-delay: 2.5s; /* Delay sebelum animasi dimulai */
+}
+
+
+.indonesia-effect {
+    position: absolute;
+    bottom: 50; /* Posisi di bagian bawah section */
+    left: 43%;
+    transform: translateX(-50%); /* Pusatkan secara horizontal */
+    width: 115%; /* Atur lebar sesuai kebutuhan */
+    height: auto; /* Pertahankan rasio aspek */
+    z-index: 0; /* Di belakang semua elemen */
+}
+
+.header-welcome-img {
+    width: 700%; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Pertahankan rasio aspek */
+    max-width: 1920px; /* Atur lebar maksimum jika diperlukan */
+    margin-bottom: 1rem; /* Ruang di bawah gambar */
+    position: relative; /* Pastikan di atas gambar latar belakang */
+    z-index: 2; /* Di atas gambar light dan indonesia */
+}
+
+@media (max-width: 768px) {
+    .header-welcome-img {
+        max-width: 100%; /* Izinkan gambar penuh pada layar kecil */
+    }
+}
+
+
+
 
 
 
@@ -908,7 +965,7 @@ section,
 }
 
 .hero h2 .accent {
-  color: var(--conrast-color);
+  color: var(--contrast-color);
 }
 
 .hero p {

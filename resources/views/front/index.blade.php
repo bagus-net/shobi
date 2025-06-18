@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Impact Bootstrap Template</title>
+  <title>home - DIFEST</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -23,6 +23,8 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Tambahkan di dalam <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -42,23 +44,23 @@
 
     <div class="topbar d-flex align-items-center" style="background-color: #8b0000;">
       <div class="container d-flex justify-content-between">
-        {{-- <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com" style="color: white;">contact@example.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color: white;">+1 5589 55488 55</span></i>
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:difest8th@gmail.com" style="color: white;">difest8th@gmail.com</a></i>
+          {{-- <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color: white;">+1 5589 55488 55</span></i> --}}
         </div>
         <div class="social-links d-flex align-items-center">
           <a href="#" class="twitter" style="color: white;"><i class="bi bi-twitter-x"></i></a>
           <a href="#" class="facebook" style="color: white;"><i class="bi bi-facebook"></i></a>
           <a href="#" class="instagram" style="color: white;"><i class="bi bi-instagram"></i></a>
           <a href="#" class="linkedin" style="color: white;"><i class="bi bi-linkedin"></i></a>
-        </div> --}}
+        </div>
       </div>
     </div><!-- End Top Bar -->
 
     <div class="branding d-flex align-items-center flex-column" style="background-color: #a40000; padding: 10px 0; width: 100%;">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center" style="color: white; font-weight: bold; font-size: 24px; text-decoration: none;">
+        <a href="#hero" class="logo d-flex align-items-center" style="color: white; font-weight: bold; font-size: 24px; text-decoration: none;">
           Dafi Islamic Festival
         </a>
 
@@ -66,11 +68,11 @@
           <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
             <li style="margin-right: 20px;"><a href="#hero" class="active" style="color: white; text-decoration: none;">Home</a></li>
             <li style="margin-right: 20px;"><a href="#about" style="color: white; text-decoration: none;">About</a></li>
-            <li style="margin-right: 20px;"><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
-            <li style="margin-right: 20px;"><a href="#portfolio" style="color: white; text-decoration: none;">Portfolio</a></li>
-            <li style="margin-right: 20px;"><a href="#team" style="color: white; text-decoration: none;">Team</a></li>
+            <li style="margin-right: 20px;"><a href="#services" style="color: white; text-decoration: none;">Lomba</a></li>
+            <li style="margin-right: 20px;"><a href="#portfolio" style="color: white; text-decoration: none;">Daftar</a></li>
+            {{-- <li style="margin-right: 20px;"><a href="#team" style="color: white; text-decoration: none;">Team</a></li>
             <li style="margin-right: 20px;"><a href="blog.html" style="color: white; text-decoration: none;">Blog</a></li>
-            <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+            <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li> --}}
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list" style="color: white;"></i>
         </nav>
@@ -141,52 +143,124 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
+      <div class="container section-title" data-aos="fade-up">
+        {{-- <h2>About Us<br></h2> --}}
+         <img src="assets/img/apaitu.png" class="img-fluid rounded-4" alt="About Us Image">
+      </div><!-- End Section Title -->
+
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+        {{-- <img src="assets/img/about.jpg" class="img-fluid rounded-4" alt="About Us Image">
+      </div> --}}
+
+    </section><!-- /About Section -->
+        <!-- Carousel Section -->
+    <section id="carousel" class="carousel section">
+        <div class="container">
+            {{-- <h2 class="text-center" data-aos="fade-up">Image Carousel</h2> --}}
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{ asset('assets/img/3.png') }}" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ asset('assets/img/4.png') }}" class="d-block w-100" alt="Image 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ asset('assets/img/5.png') }}" class="d-block w-100" alt="Image 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ asset('assets/img/6.png') }}" class="d-block w-100" alt="Image 6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section><!-- /Carousel Section -->
+<!-- Services Section -->
+    <section id="services" class="services section">
+
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us<br></h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <img src="assets/img/judul-lomba.png" class="img-fluid rounded-4" alt="About Us Image">
+        {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
 
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
-              </div>
-            </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item position-relative">
+              <img src="{{ asset('assets/img/lomba1.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+               <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
           </div>
+      </div><!-- End Service Item -->
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <img src="{{ asset(path: 'assets/img/lomba2.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+               <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <img src="{{ asset(path: 'assets/img/lomba3.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+               <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <img src="{{ asset(path: 'assets/img/lomba4.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+               <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+             <img src="{{ asset(path: 'assets/img/lomba5.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+              < <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+
+              <img src="{{ asset(path: 'assets/img/lomba6.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+              <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
+    </section><!-- /Services Section -->
 
-    <!-- Clients Section -->
+    {{-- <!-- Clients Section -->
     <section id="clients" class="clients section">
-
+ <center><h3>Supported By :</h3> </center>
       <div class="container">
 
         <div class="swiper init-swiper">
@@ -237,9 +311,9 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section><!-- /Clients Section --> --}}
 
-    <!-- Stats Section -->
+    {{-- <!-- Stats Section -->
     <section id="stats" class="stats section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -323,90 +397,7 @@
 
     </section><!-- /Call To Action Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <h3>Nesciunt Mete</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <h3>Asperiores Commodit</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <h3>Velit Doloremque</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
+    
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
@@ -1087,7 +1078,7 @@
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /Contact Section --> --}}
 
   </main>
 
@@ -1097,7 +1088,7 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Impact</span>
+            <span class="sitename">Dafi Islamic Festival</span>
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
@@ -1113,13 +1104,12 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Lomba</a></li>
+            <li><a href="#">Daftar</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        {{-- <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
             <li><a href="#">Web Design</a></li>
@@ -1128,7 +1118,7 @@
             <li><a href="#">Marketing</a></li>
             <li><a href="#">Graphic Design</a></li>
           </ul>
-        </div>
+        </div> --}}
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
@@ -1136,14 +1126,14 @@
           <p>New York, NY 535022</p>
           <p>United States</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p><strong>Email:</strong> <span>difest8th@gmail.com/span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Impact</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">sobatweb</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -1174,13 +1164,59 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+
+
   <style>
+    #about {
+    background-image: url('assets/img/bg-about.png'); /* Ganti dengan path yang sesuai */
+    background-size: cover; /* Menutupi seluruh area */
+    background-position: center; /* Pusatkan gambar */
+    background-repeat: no-repeat; /* Jangan ulang gambar */
+    padding: 60px 0; /* Atur padding sesuai kebutuhan */
+    color: white; /* Atur warna teks jika diperlukan */
+}
+.testimonials .testimonial-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ubah menjadi border-box untuk menghitung padding dan border dalam lebar */
+  padding: 30px;
+  margin: 30px 0; /* Hapus margin samping untuk membuatnya lebih lebar */
+  position: relative;
+  height: auto; /* Ubah menjadi auto untuk menyesuaikan tinggi konten */
+  width: 100%; /* Atur lebar menjadi 100% untuk mengisi kontainer */
+  max-width: 1200px; /* Atur lebar maksimum sesuai kebutuhan */
+  margin-left: auto; /* Pusatkan box */
+  margin-right: auto; /* Pusatkan box */
+}
 
-
+.carousel img {
+    width: 100%; /* Pastikan gambar mengisi lebar kontainer */
+    height: auto; /* Pertahankan rasio aspek */
+}
+.service-item {
+    position: relative; /* Pastikan posisi relatif untuk elemen anak */
+    overflow: hidden; /* Sembunyikan bagian gambar yang melampaui batas card */
+}
+.service-item img {
+    width: 100%; /* Pastikan gambar mengisi lebar card */
+    height: 100%; /* Pastikan gambar mengisi tinggi card */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+#services {
+    background-image: url('assets/img/bg-lomba.png'); /* Ganti dengan path yang sesuai */
+    background-size: contain; /* Menutupi seluruh area */
+    background-position: center; /* Pusatkan gambar */
+    background-repeat: no-repeat; /* Jangan ulang gambar */
+    padding: 10px 0; /* Atur padding sesuai kebutuhan */
+ 
+}
     .animate-fade-in-scale {
       animation: fadeInScale 1.5s ease forwards;
     }
   </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

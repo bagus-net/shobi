@@ -24,8 +24,6 @@
     margin-bottom: 1rem; /* Ruang di bawah gambar */
     position: relative; /* Pastikan di atas gambar latar belakang */
     z-index: 2; /* Di atas gambar light dan indonesia */
-    animation: fadeIn 1s ease forwards; /* Tambahkan animasi */
-    animation-delay: 1.5s; /* Delay sebelum animasi dimulai */
 }
 
 @media (max-width: 768px) {
@@ -55,21 +53,6 @@
     width: 115%; /* Atur lebar sesuai kebutuhan */
     height: auto; /* Pertahankan rasio aspek */
     z-index: 0; /* Di belakang semua elemen */
-}
-
-.header-welcome-img {
-    width: 700%; /* Atur lebar gambar sesuai kebutuhan */
-    height: auto; /* Pertahankan rasio aspek */
-    max-width: 1920px; /* Atur lebar maksimum jika diperlukan */
-    margin-bottom: 1rem; /* Ruang di bawah gambar */
-    position: relative; /* Pastikan di atas gambar latar belakang */
-    z-index: 2; /* Di atas gambar light dan indonesia */
-}
-
-@media (max-width: 768px) {
-    .header-welcome-img {
-        max-width: 100%; /* Izinkan gambar penuh pada layar kecil */
-    }
 }
 
 
@@ -636,6 +619,65 @@ h6 {
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+  }
+}
+
+/* Additional header responsiveness */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .header .branding {
+    min-height: 50px;
+    padding: 5px 0;
+  }
+
+  .header .logo img {
+    max-height: 28px;
+    margin-right: 5px;
+  }
+
+  .header .logo h1 {
+    font-size: 24px;
+  }
+
+  .header .logo span {
+    font-size: 26px;
+  }
+
+  .header .topbar {
+    height: 30px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    padding: 8px 10px;
+  }
+
+  .header .branding {
+    min-height: 40px;
+    padding: 3px 0;
+  }
+
+  .header .logo img {
+    max-height: 24px;
+    margin-right: 4px;
+  }
+
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  .header .logo span {
+    font-size: 22px;
+  }
+
+  .header .topbar {
+    height: 25px;
+    font-size: 12px;
   }
 }
 

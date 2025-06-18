@@ -45,6 +45,18 @@ Detail Peserta
                             <p>Tidak ada foto yang diunggah.</p>
                         @endif
                     </div>
+                    <div class="mb-3">
+  <label for="lomba" class="form-label">Lomba yang ingin diikuti :</label>
+  <select class="form-select" id="lomba" name="lomba" required>
+    <option value="">Pilih Lomba</option>
+    <option value="MTQ">MTQ (Musabaqah Tilawatil Quran)</option>
+    <option value="Karya Ilmiah">Karya Ilmiah</option>
+    <option value="Debat">Debat</option>
+    <option value="Lomba Menulis Cerita">Lomba Menulis Cerita</option>
+    <!-- Tambahkan pilihan lomba lainnya di sini -->
+  </select>
+</div>
+
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-12">

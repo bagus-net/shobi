@@ -23,8 +23,18 @@
           </div>
           <div class="mb-3">
             <label for="lomba" class="form-label">Lomba yang ingin diikuti :</label>
-            <input type="text" class="form-control" id="lomba" name="lomba" required>
+            <select class="form-select" id="lomba" name="lomba" required>
+              <option value="">Pilih Lomba</option>
+              <option value="MTQ">MTQ (Musabaqah Tilawatil Quran)</option>
+              <option value="Dai Muda">Dai Muda</option>
+              <option value="Olimpiade PAI">Olimpiade PAI</option>
+              <option value="Poster Digital">Poster Digital</option>
+              <option value="Olimpiade MIPA">Olimpiade MIPA</option>
+              <option value="MHQ">MTQ (Musabaqah Hifdzil Quran)</option>
+              <!-- Tambahkan pilihan lomba lainnya di sini -->
+            </select>
           </div>
+
           <div class="mb-3">
             <label for="pas_foto" class="form-label">Upload PAS Foto 3 x 4 dalam format jpg atau png :</label>
             <input type="file" class="form-control" id="pas_foto" name="pas_foto" accept=".jpg,.jpeg,.png" required>

@@ -69,7 +69,7 @@
             <li style="margin-right: 20px;"><a href="#hero" class="active" style="color: white; text-decoration: none;">Home</a></li>
             <li style="margin-right: 20px;"><a href="#about" style="color: white; text-decoration: none;">About</a></li>
             <li style="margin-right: 20px;"><a href="#services" style="color: white; text-decoration: none;">Lomba</a></li>
-            <li style="margin-right: 20px;"><a href="#portfolio" style="color: white; text-decoration: none;">Daftar</a></li>
+            <li style="margin-right: 20px;"><a href="#registration" style="color: white; text-decoration: none;">Daftar</a></li>
             {{-- <li style="margin-right: 20px;"><a href="#team" style="color: white; text-decoration: none;">Team</a></li>
             <li style="margin-right: 20px;"><a href="blog.html" style="color: white; text-decoration: none;">Blog</a></li>
             <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li> --}}
@@ -153,6 +153,8 @@
       </div> --}}
 
     </section><!-- /About Section -->
+
+    
         <!-- Carousel Section -->
     <section id="carousel" class="carousel section">
         <div class="container">
@@ -206,18 +208,18 @@
       </div><!-- End Service Item -->
 
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <img src="{{ asset(path: 'assets/img/lomba2.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
-               <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <img src="{{ asset('assets/img/lomba2.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+                 <h3>Dolori Architecto</h3>
+                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+                <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
-              <img src="{{ asset(path: 'assets/img/lomba3.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+              <img src="{{ asset('assets/img/lomba3.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
                <h3>Dolori Architecto</h3>
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
               <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
@@ -226,7 +228,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
-              <img src="{{ asset(path: 'assets/img/lomba4.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+              <img src="{{ asset('assets/img/lomba4.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
                <h3>Dolori Architecto</h3>
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
               <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
@@ -235,8 +237,8 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
-             <img src="{{ asset(path: 'assets/img/lomba5.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
-              < <h3>Dolori Architecto</h3>
+             <img src="{{ asset('assets/img/lomba5.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+              <h3>Dolori Architecto</h3>
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
               <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
@@ -244,8 +246,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
-
-              <img src="{{ asset(path: 'assets/img/lomba6.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+              <img src="{{ asset('assets/img/lomba6.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
               <h3>Dolori Architecto</h3>
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
               <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
@@ -257,7 +258,7 @@
       </div>
 
     </section><!-- /Services Section -->
-
+@include('front.registration-form')
     {{-- <!-- Clients Section -->
     <section id="clients" class="clients section">
  <center><h3>Supported By :</h3> </center>
@@ -1122,9 +1123,9 @@
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
+          <p>Jl. Putra Bangsa RT 01 RW 01</p>
+          <p>Desa Anggaswangi, Kecamatan Sukodono,</p>
+          <p>Kabupaten Sidoarjo</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
           <p><strong>Email:</strong> <span>difest8th@gmail.com/span></p>
         </div>

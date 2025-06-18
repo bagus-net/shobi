@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\PesertaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,18 @@ use App\Http\Controllers\FrontController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/register', [RegistrationController::class, 'store'])->name('register.submit');
+
+Route::get('/registration-success', [RegistrationController::class, 'registrationSuccess'])->name('registration.success');
+
+Route::get('peserta', [PesertaController::class, 'index'])->name('peserta.index');
+Route::get('peserta/{id}', [PesertaController::class, 'show'])->name('peserta.show');
+Route::get('peserta/create', [PesertaController::class, 'create'])->name('peserta.create');
+// Route::post('peserta', [PesertaController::class, 'store'])->name('peserta.store');
+Route::get('peserta/{id}/edit', [PesertaController::class, 'edit'])->name('peserta.edit');
+Route::post('peserta/{id}', [PesertaController::class, 'update'])->name('peserta.update');
+Route::delete('peserta/{id}', [PesertaController::class, 'destroy'])->name('peserta.destroy');
 
 // Front routes
 Route::get('/front', [FrontController::class, 'index'])->name('front.index');

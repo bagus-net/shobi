@@ -37,7 +37,17 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.mobile-nav-toggle');
+    const navUl = document.querySelector('#navmenu ul');
+    if (toggle && navUl) {
+      toggle.addEventListener('click', function() {
+        navUl.classList.toggle('show');
+      });
+    }
+  });
+</script>
 <body class="index-page">
 
   <header id="header" class="header fixed-top">
@@ -49,10 +59,8 @@
           {{-- <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color: white;">+1 5589 55488 55</span></i> --}}
         </div>
         <div class="social-links d-flex align-items-center">
-          <a href="#" class="twitter" style="color: white;"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook" style="color: white;"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram" style="color: white;"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin" style="color: white;"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.tiktok.com/@difest" class="tiktok" style="color: white;"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.instagram.com/official.difest/" class="instagram" style="color: white;"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
     </div><!-- End Top Bar -->
@@ -249,6 +257,14 @@
               <img src="{{ asset('assets/img/lomba6.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
               <h3>MHQ</h3>
               <p>Lomba MHQ (Musabaqah Hifzhil Qur’an) adalah ajang perlombaan menghafal Al-Qur’an yang dirancang untuk menguji kemampuan peserta dalam hafalan, ketepatan bacaan, dan kelancaran dalam melafalkan ayat-ayat suci Al-Qur’an. Lomba ini tidak hanya menjadi sarana untuk mengukur sejauh mana hafalan seseorang, tetapi juga sebagai bentuk motivasi dalam menjaga dan mencintai Al-Qur’an sebagai pedoman hidup.</p>
+              {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <img src="{{ asset('assets/img/lomba7.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
+              <h3>Story Telling</h3>
+              <p>Story Telling adalah seseorang yang menyampaikan sebuah cerita melalui berbagai media seperti kata-kata, gambar, atau suara. Kegiatan ini dirancang untuk menyampaikan pesan dengan menarik, mengembangkan imajinasi dan kreatifitas, serta meningkatkan kemampuan berbahasa, dan berkomunikasi.</p>
               {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
             </div>
           </div><!-- End Service Item -->
@@ -1088,25 +1104,23 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="#hero" class="logo d-flex align-items-center">
             <span class="sitename">Dafi Islamic Festival</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@difest"><i class="bi bi-tiktok"></i></a>
+            <a href="https://www.instagram.com/official.difest/"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Lomba</a></li>
-            <li><a href="#">Daftar</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Lomba</a></li>
+            <li><a href="#registration">Daftar</a></li>
           </ul>
         </div>
 
@@ -1126,8 +1140,8 @@
           <p>Jl. Putra Bangsa RT 01 RW 01</p>
           <p>Desa Anggaswangi, Kecamatan Sukodono,</p>
           <p>Kabupaten Sidoarjo</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>difest8th@gmail.com/span></p>
+          {{-- <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p> --}}
+          <p><strong>Email:</strong> <span>difest8th@gmail.com</span></p>
         </div>
 
       </div>
@@ -1212,6 +1226,8 @@
     padding: 10px 0; /* Atur padding sesuai kebutuhan */
  
 }
+
+
     .animate-fade-in-scale {
       animation: fadeInScale 1.5s ease forwards;
     }

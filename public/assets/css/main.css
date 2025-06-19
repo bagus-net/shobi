@@ -17,6 +17,74 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
+
+
+/* Hilangkan border dan background putih di bawah navmenu */
+#navmenu ul,
+#navmenu li,
+#navmenu a {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Jika ada <hr> di header/nav, sembunyikan */
+#header hr,
+#navmenu hr {
+  display: none !important;
+  border: none !important;
+  background: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+}
+
+/* Hilangkan border bawah pada navmenu mobile */
+@media (max-width: 991.98px) {
+  #navmenu li {
+    border-bottom: none !important;
+  }
+}
+
+/* Responsive navmenu untuk mobile */
+@media (max-width: 991.98px) {
+  #navmenu ul {
+    flex-direction: column;
+    background: #a40000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+    z-index: 999;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  #navmenu ul.show {
+    display: flex;
+  }
+  #navmenu li {
+    margin: 0;
+    border-bottom: 1px solid #fff2;
+  }
+  #navmenu a {
+    padding: 14px 20px;
+    color: #fff;
+  }
+  .mobile-nav-toggle {
+    display: block !important;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+}
+
+/* Sembunyikan tombol mobile-nav-toggle di desktop */
+@media (min-width: 992px) {
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+}
+
 .header-welcome-img {
     width: 700%; /* Atur lebar gambar sesuai kebutuhan */
     height: auto; /* Pertahankan rasio aspek */

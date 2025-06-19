@@ -16,10 +16,10 @@ use App\Http\Controllers\PesertaController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', [FrontController::class, 'index'])->name('front.index');
 Route::post('/register', [RegistrationController::class, 'store'])->name('register.submit');
 
 Route::get('/registration-success', [RegistrationController::class, 'registrationSuccess'])->name('registration.success');
@@ -33,5 +33,5 @@ Route::post('peserta/{id}', [PesertaController::class, 'update'])->name('peserta
 Route::delete('peserta/{id}', [PesertaController::class, 'destroy'])->name('peserta.destroy');
 
 // Front routes
-Route::get('/front', [FrontController::class, 'index'])->name('front.index');
+// Route::get('/front', [FrontController::class, 'index'])->name('front.index');
 Route::get('/front/service-details', [FrontController::class, 'serviceDetails'])->name('front.service-details');

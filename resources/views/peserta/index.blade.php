@@ -32,6 +32,7 @@ Data Peserta
                         <thead>
                             <tr>
                                 <th>No</th>
+                                <th>Foto</th>
                                 <th>Nama Lengkap</th>
                                 <th>Asal Sekolah</th>
                                 <th>Email</th>
@@ -44,6 +45,8 @@ Data Peserta
                             @foreach ($registrations as $registration)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
+                                <td><img src="{{ Storage::url($registration->pas_foto_path) }}" alt=""
+                                class="avatar-lg rounded-circle img-thumbnail" style="width: 100x; height: 100px;"></td>
                                 <td>{{ $registration->nama_lengkap }}</td>
                                 <td>{{ $registration->asal_sekolah }}</td>
                                 <td>{{ $registration->email }}</td>

@@ -15,6 +15,7 @@
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Alamat email aktif :</label>
+            <p class="text-muted">1 Email hanya untuk 1 Lomba</p> 
             <input type="email" class="form-control" id="email" name="email" required>
           </div>
           <div class="mb-3">
@@ -31,6 +32,7 @@
               <option value="Poster Digital">Poster Digital</option>
               <option value="Olimpiade MIPA">Olimpiade MIPA</option>
               <option value="MHQ">MTQ (Musabaqah Hifdzil Quran)</option>
+              <option value="Story Telling">Story Telling</option>
               <!-- Tambahkan pilihan lomba lainnya di sini -->
             </select>
           </div>

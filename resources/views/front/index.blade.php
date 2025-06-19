@@ -201,9 +201,9 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="service-item position-relative">
               <img src="{{ asset('assets/img/lomba1.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
-               <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+               <h3>MTQ</h3>
+              <p>Musabaqah Tilawatil Qur'an (MTQ) adalah ajang perlombaan membaca Al-Qur'an dengan lantunan indah dan penuh makna. Perlombaan ini menjadi wadah untuk menumbuhkan kecintaan terhadap Al-Qur'an, memperkuat karakter Islami, serta mengasah kemampuan tilawah dengan adab dan tajwid yang benar.</p>
+              {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
           </div>
       </div><!-- End Service Item -->
 
@@ -211,45 +211,45 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="service-item position-relative">
                 <img src="{{ asset('assets/img/lomba2.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
-                 <h3>Dolori Architecto</h3>
-                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+                 <h3>Da'i Muda</h3>
+                <p>Lomba da'i muda adalah ajang untuk mengasah bakat ceramah generasi muda, seperti pelajar dan mahasiswa. Tujuannya mendorong pemuda aktif berdakwah dengan cara yang menarik dan relevan. Peserta menyampaikan ceramah singkat bertema keislaman dan dinilai dari materi, retorika, penampilan, penguasaan panggung, dan kreativitas. Kegiatan ini melatih public speaking, memperluas wawasan agama, membentuk karakter Islami, dan meningkatkan kepercayaan diri.</p>
+                {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
               </div>
             </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <img src="{{ asset('assets/img/lomba3.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
-               <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+               <h3>Olimpiade PAI</h3>
+              <p>adalah ajang perlombaan yang menguji pemahaman peserta terhadap materi Pendidikan Agama Islam, mulai dari Al-Qur’an, Akidah, Akhlak, Fikih, hingga Sejarah Kebudayaan Islam. Lomba ini tidak hanya menjadi sarana untuk mengukur sejauh mana pemahaman peserta terhadap ajaran Islam, tetapi juga sebagai bentuk dorongan untuk lebih mencintai dan mengamalkan nilai-nilai Islam dalam kehidupan sehari-hari.</p>
+              {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <img src="{{ asset('assets/img/lomba4.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
-               <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+               <h3>Poster Digital</h3>
+              <p>Lomba Poster Digital adalah ajang kreativitas visual yang dirancang untuk menguji kemampuan peserta dalam menyampaikan pesan melalui desain poster yang menarik dan komunikatif. Lomba ini menjadi sarana menyalurkan bakat seni digital sekaligus menyuarakan ide dan nilai positif secara visual, kreatif, dan inspiratif.</p>
+              {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
              <img src="{{ asset('assets/img/lomba5.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Olimpiade MIPA</h3>
+              <p>Olimpiade MIPA adalah kompetisi edukatif yang menantang pelajar untuk mengasah kemampuan logika, analisis, dan pemecahan masalah di bidang Matematika dan Ilmu Pengetahuan Alam. Kegiatan ini dirancang untuk menumbuhkan semangat berprestasi, meningkatkan daya saing akademik, serta menggali potensi generasi muda dalam sains dan teknologi.</p>
+              {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <img src="{{ asset('assets/img/lomba6.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>MHQ</h3>
+              <p>Lomba MHQ (Musabaqah Hifzhil Qur’an) adalah ajang perlombaan menghafal Al-Qur’an yang dirancang untuk menguji kemampuan peserta dalam hafalan, ketepatan bacaan, dan kelancaran dalam melafalkan ayat-ayat suci Al-Qur’an. Lomba ini tidak hanya menjadi sarana untuk mengukur sejauh mana hafalan seseorang, tetapi juga sebagai bentuk motivasi dalam menjaga dan mencintai Al-Qur’an sebagai pedoman hidup.</p>
+              {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
             </div>
           </div><!-- End Service Item -->
 

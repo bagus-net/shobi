@@ -51,7 +51,7 @@ Data Peserta
                                 <td>{{ $registration->lomba }}</td>
                                 <td>
                                     <a href="{{ route('peserta.show', $registration->id) }}" class="btn btn-info btn-sm">Lihat</a>
-                                    <a href="{{ route('peserta.edit', $registration->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                    {{-- <a href="{{ route('peserta.edit', $registration->id) }}" class="btn btn-warning btn-sm">Edit</a> --}}
                                     <form action="{{ route('peserta.destroy', $registration->id) }}" method="POST" style="display:inline-block;">
                                         @csrf
                                         @method('DELETE')

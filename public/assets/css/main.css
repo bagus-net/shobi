@@ -1,3 +1,16 @@
+/* Perbesar logo DIFEST di navbar index */
+.difest-logo {
+  height: 1000px !important;
+  max-width: 100%;
+  width: auto;
+  display: block;
+  transition: height 0.2s;
+}
+@media (max-width: 767.98px) {
+  .difest-logo {
+    height: 140px !important;
+  }
+}
 /**
 * Template Name: Impact
 * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/

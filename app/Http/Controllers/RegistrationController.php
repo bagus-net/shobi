@@ -20,7 +20,8 @@ class RegistrationController extends Controller
     }
 
     public function store(Request $request)
-    {
+{
+    try {
         $validated = $request->validate([
             'nama_lengkap' => 'required|string|max:255',
             'asal_sekolah' => 'required|string|max:255',
@@ -51,7 +52,12 @@ class RegistrationController extends Controller
         ]);
 
         return redirect()->route('front.index')->with('success', 'Pendaftaran berhasil disimpan.');
+    } catch (\Exception $e) {
+        // Jika terjadi kesalahan, redirect kembali dengan pesan error
+        return redirect()->back()->withErrors(['error' => 'Pendaftaran gagal disimpan. Silakan coba lagi.']);
     }
+}
+
 
     public function show($id)
     {

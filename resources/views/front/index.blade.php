@@ -9,12 +9,13 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/png" href="{{ asset('assets/img/difest-logo.png') }}">
+  <link href="{{ asset('assets/img/difest-logo.png') }}" rel="apple-touch-icon" 
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Migra:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -50,37 +51,45 @@
 </script>
 <body class="index-page">
 
-  <header id="header" class="header fixed-top">
+   <header id="header" class="header fixed-top"> 
 
-    <div class="topbar d-flex align-items-center" style="background-color: #8b0000;">
-      <div class="container d-flex justify-content-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:difest8th@gmail.com" style="color: white;">difest8th@gmail.com</a></i>
-          {{-- <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color: white;">+1 5589 55488 55</span></i> --}}
-        </div>
-        <div class="social-links d-flex align-items-center">
-          <a href="https://www.tiktok.com/@difest" class="tiktok" style="color: white;"><i class="bi bi-tiktok"></i></a>
-          <a href="https://www.instagram.com/official.difest/" class="instagram" style="color: white;"><i class="bi bi-instagram"></i></a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
+<div class="topbar d-flex align-items-center d-block d-md-none" style="background-color: #8b0000;">
+  <div class="container d-flex justify-content-between">
+    <div class="contact-info d-flex align-items-center">
+      <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:difest8th@gmail.com" style="color: white;"></a></i>
+      
+    </div>
+    <div class="social-links d-flex align-items-center">
+      <a href="https://www.tiktok.com/@difest" class="tiktok" style="color: white;"><i class="bi bi-tiktok"></i></a>
+      <a href="https://www.instagram.com/official.difest/" class="instagram" style="color: white;"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</div><!-- End Top Bar -->
 
     <div class="branding d-flex align-items-center flex-column" style="background-color: #a40000; padding: 10px 0; width: 100%;">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="#hero" class="logo d-flex align-items-center" style="color: white; font-weight: bold; font-size: 24px; text-decoration: none;">
-          Dafi Islamic Festival
+        <!-- Logo pojok kiri di dalam navbar flex -->
+        <a href="{{ url('/') }}" class="navbar-corner-logo d-flex align-items-center" style="padding-right: 16px;">
+          <img src="{{ URL::asset('/assets/img/difest.png') }}" alt="Logo Kiri" style="height: 70px; width: auto;">
+        </a>
+        <a href="{{ url('/') }}" class="logo d-flex align-items-center" style="color: white; font-weight: bold; font-size: 24px; text-decoration: none;">
+
+          
+ 
         </a>
 
         <nav id="navmenu" class="navmenu">
-          <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+          <ul style="display: flex; list-style: none; margin: 0; padding: 0; align-items: center;">
             <li style="margin-right: 20px;"><a href="#hero" class="active" style="color: white; text-decoration: none;">Home</a></li>
             <li style="margin-right: 20px;"><a href="#about" style="color: white; text-decoration: none;">About</a></li>
-            <li style="margin-right: 20px;"><a href="#services" style="color: white; text-decoration: none;">Lomba</a></li>
+            <li style="margin-right: 20px;"><a href="#services" style="color: white; text-decoration: none;">Category</a></li>
             <li style="margin-right: 20px;"><a href="#registration" style="color: white; text-decoration: none;">Daftar</a></li>
-            {{-- <li style="margin-right: 20px;"><a href="#team" style="color: white; text-decoration: none;">Team</a></li>
-            <li style="margin-right: 20px;"><a href="blog.html" style="color: white; text-decoration: none;">Blog</a></li>
-            <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li> --}}
+            <li class="d-none d-md-flex" style="gap: 12px; align-items: center;">
+              <a href="mailto:difest8th@gmail.com" title="Email" style="color: white; font-size: 1.3em;"><i class="bi bi-envelope"></i></a>
+              <a href="https://www.tiktok.com/@difest" target="_blank" title="TikTok" style="color: white; font-size: 1.3em;"><i class="bi bi-tiktok"></i></a>
+              <a href="https://www.instagram.com/official.difest/" target="_blank" title="Instagram" style="color: white; font-size: 1.3em;"><i class="bi bi-instagram"></i></a>
+            </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list" style="color: white;"></i>
         </nav>
@@ -275,6 +284,30 @@
 
     </section><!-- /Services Section -->
 @include('front.registration-form')
+
+
+<!-- Maps Darul Fikri Sidoarjo (Card Style) -->
+<section id="maps" class="maps section py-5" style="background: #f8f9fa;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="card shadow border-0">
+          <div class="card-body p-0">
+            <div class="p-4 pb-2">
+              <h3 class="mb-3 text-center" style="color: #a40000; font-weight: bold;">Lokasi DIFEST</h3>
+              <p class="text-center mb-4" style="color: #333;">Jl. Putra Bangsa RT 01 RW 01, Desa Anggaswangi, Kecamatan Sukodono, Kabupaten Sidoarjo</p>
+            </div>
+            <div style="width: 100%; height: 400px;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.234073964017!2d112.6759733153347!3d-7.413909894624998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e3c8619877c3%3A0xb3bf5efcacb854ef!2sPPTQ%20MAIT%20Darul%20Fikri%20Sidoarjo!5e0!3m2!1sid!2sid!4v1720950000000!5m2!1sid!2sid"
+                width="100%" height="100%" style="border:0; border-radius: 0 0 8px 8px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</section>
     {{-- <!-- Clients Section -->
     <section id="clients" class="clients section">
  <center><h3>Supported By :</h3> </center>
@@ -1105,7 +1138,7 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="#hero" class="logo d-flex align-items-center">
-            <span class="sitename">Dafi Islamic Festival</span>
+            <img src="{{ asset('assets/img/difest.png') }}" alt="DIFEST Logo" style="height: 70px; width: auto;" class="footer-difest-logo">
           </a>
           
           <div class="social-links d-flex mt-4">
@@ -1114,7 +1147,7 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        {{-- <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#hero">Home</a></li>
@@ -1122,7 +1155,7 @@
             <li><a href="#services">Lomba</a></li>
             <li><a href="#registration">Daftar</a></li>
           </ul>
-        </div>
+        </div> --}}
 
         {{-- <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
@@ -1136,26 +1169,35 @@
         </div> --}}
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>Jl. Putra Bangsa RT 01 RW 01</p>
-          <p>Desa Anggaswangi, Kecamatan Sukodono,</p>
-          <p>Kabupaten Sidoarjo</p>
-          {{-- <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p> --}}
-          <p><strong>Email:</strong> <span>difest8th@gmail.com</span></p>
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Pondok Putra</h4>
+              <p>Jl. Putra Bangsa RT 01/01<br>
+              Ds. Anggaswangi Kec.<br>
+              Sukodono Kab. Sidoarjo</p>
+            </div>
+            <div class="col-md-6">
+              <h4>Pondok Putri</h4>
+              <p>Ds. Sarirogo RT14/03,<br>
+              Kec. Sidoarjo, Kab.<br>
+              Sidoarjo</p>
+            </div>
+          </div>
+          <p class="mt-3"><strong>Email:</strong> <span>difest8th@gmail.com</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">sobatweb</strong> <span>All Rights Reserved</span></p>
+      {{-- <p>© <span>Copyright</span> <strong class="px-1 sitename">sobatweb</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
-      </div>
+      </div> --}}
     </div>
 
   </footer>
@@ -1191,6 +1233,28 @@
     padding: 60px 0; /* Atur padding sesuai kebutuhan */
     color: white; /* Atur warna teks jika diperlukan */
 }
+
+.registration-form *, #maps, .maps *, .maps .card-title, .maps p {
+    font-family: 'Migra', serif !important;
+}
+.registration-form label,
+.registration-form input,
+.registration-form textarea,
+.registration-form button {
+    font-family: 'Montserrat', sans-serif !important;
+}
+.registration-form-title {
+    font-family: 'Migra', serif !important;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a40000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#registration {
+    background: linear-gradient(180deg, #fff 0%, #d3d3d3 100%);
+}
 .testimonials .testimonial-item {
   background-color: var(--surface-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1224,7 +1288,15 @@
     background-position: center; /* Pusatkan gambar */
     background-repeat: no-repeat; /* Jangan ulang gambar */
     padding: 10px 0; /* Atur padding sesuai kebutuhan */
- 
+}
+
+@media (max-width: 767.98px) {
+  #services {
+    background-image: url('assets/img/bg-lomba-mobile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 

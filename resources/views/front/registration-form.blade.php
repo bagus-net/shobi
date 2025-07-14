@@ -1,5 +1,10 @@
 <section id="registration" class="registration section" data-aos="fade-up" data-aos-delay="100">
   <div class="container">
+    @if($errors->any())
+<script>
+    alert('Pendaftaran gagal disimpan. gunakan email yg berbeda & Silakan coba lagi.');
+</script>
+@endif
     <h2 class="section-title">Formulir Pendaftaran</h2>
     <div class="card border-danger mb-3" style="max-width: 500px; margin: 0 auto; background-color: #8b0000; color: white;">
       <div class="card-body">
@@ -72,8 +77,8 @@
           {{ session('success') }}
         </div>
         <div class="modal-footer">
-          <a href="{{ url('/front') }}" class="btn btn-light">Kembali ke Beranda</a>
-          
+          <a href="https://chat.whatsapp.com/BUe6e0diAJGAzyCgINdkqG?mode=ac_t" target="_blank" class="btn btn-success" style="background-color: #25D366; color: white; border: none;">Join Grup WA</a>
+          <a href="{{ url('/') }}" class="btn btn-light">Kembali ke Beranda</a>
         </div>
       </div>
     </div>

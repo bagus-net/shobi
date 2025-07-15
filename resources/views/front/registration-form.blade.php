@@ -5,7 +5,7 @@
     alert('Pendaftaran gagal disimpan. gunakan email yg berbeda & Silakan coba lagi.');
 </script>
 @endif
-    <h2 class="section-title">Formulir Pendaftaran</h2>
+    <h2 class="section-title">Registration form</h2>
     <div class="card border-danger mb-3" style="max-width: 500px; margin: 0 auto; background-color: #8b0000; color: white;">
       <div class="card-body">
         <form action="{{ route('register.submit') }}" method="POST" enctype="multipart/form-data">

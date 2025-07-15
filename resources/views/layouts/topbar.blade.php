@@ -22,8 +22,9 @@
                 </a>
             </div>
 
-            <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
-
+            <!-- Hamburger menu for mobile sidebar toggle -->
+            <button type="button" class="btn btn-sm px-3 font-size-20 header-item waves-effect vertical-menu-btn d-block d-lg-none" id="sidebarToggle" aria-label="Toggle sidebar">
+                <i class="uil uil-bars"></i>
             </button>
 
             <!-- App Search-->
@@ -32,7 +33,7 @@
 
         <div class="d-flex">
 
-            <div class="dropdown d-none d-lg-inline-block ms-1">
+            <div class="dropdown d-inline-block ms-1">
                 <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
                     <i class="uil-minus-path"></i>
                 </button>

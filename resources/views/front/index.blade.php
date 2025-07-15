@@ -84,7 +84,7 @@
             <li style="margin-right: 20px;"><a href="#hero" class="active" style="color: white; text-decoration: none;">Home</a></li>
             <li style="margin-right: 20px;"><a href="#about" style="color: white; text-decoration: none;">About</a></li>
             <li style="margin-right: 20px;"><a href="#services" style="color: white; text-decoration: none;">Category</a></li>
-            <li style="margin-right: 20px;"><a href="#registration" style="color: white; text-decoration: none;">Daftar</a></li>
+            <li style="margin-right: 20px;"><a href="#registration" style="color: white; text-decoration: none;">Register</a></li>
             <li class="d-none d-md-flex" style="gap: 12px; align-items: center;">
               <a href="mailto:difest8th@gmail.com" title="Email" style="color: white; font-size: 1.3em;"><i class="bi bi-envelope"></i></a>
               <a href="https://www.tiktok.com/@difest" target="_blank" title="TikTok" style="color: white; font-size: 1.3em;"><i class="bi bi-tiktok"></i></a>

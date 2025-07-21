@@ -77,7 +77,7 @@
           {{ session('success') }}
         </div>
         <div class="modal-footer">
-          <a href="https://chat.whatsapp.com/BUe6e0diAJGAzyCgINdkqG?mode=ac_t" target="_blank" class="btn btn-success" style="background-color: #25D366; color: white; border: none;">Join Grup WA</a>
+          <a href="https://chat.whatsapp.com/K0qunUE0vY45bGbSa5yIiz" target="_blank" class="btn btn-success" style="background-color: #25D366; color: white; border: none;">Join Grup WA</a>
           <a href="{{ url('/') }}" class="btn btn-light">Kembali ke Beranda</a>
         </div>
       </div>

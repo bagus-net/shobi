@@ -229,7 +229,7 @@
               <div class="service-item position-relative">
                 <img src="{{ asset('assets/img/lomba2.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
                  <h3>Da'i Muda</h3>
-                <p>Lomba da'i muda adalah ajang untuk mengasah bakat ceramah generasi muda, seperti pelajar dan mahasiswa. Tujuannya mendorong pemuda aktif berdakwah dengan cara yang menarik dan relevan. Peserta menyampaikan ceramah singkat bertema keislaman dan dinilai dari materi, retorika, penampilan, penguasaan panggung, dan kreativitas. Kegiatan ini melatih public speaking, memperluas wawasan agama, membentuk karakter Islami, dan meningkatkan kepercayaan diri.</p>
+                <p>Da'i muda adalah ajang untuk mengasah bakat ceramah generasi muda, seperti pelajar dan mahasiswa. Tujuannya mendorong pemuda aktif berdakwah dengan cara yang menarik dan relevan. Peserta menyampaikan ceramah singkat bertema keislaman dan dinilai dari materi, retorika, penampilan, penguasaan panggung, dan kreativitas. Kegiatan ini melatih public speaking, memperluas wawasan agama, membentuk karakter Islami, dan meningkatkan kepercayaan diri.</p>
                 {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
               </div>
             </div><!-- End Service Item -->
@@ -238,7 +238,7 @@
             <div class="service-item position-relative">
               <img src="{{ asset('assets/img/lomba3.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
                <h3>Olimpiade PAI</h3>
-              <p>adalah ajang perlombaan yang menguji pemahaman peserta terhadap materi Pendidikan Agama Islam, mulai dari Al-Qur’an, Akidah, Akhlak, Fikih, hingga Sejarah Kebudayaan Islam. Lomba ini tidak hanya menjadi sarana untuk mengukur sejauh mana pemahaman peserta terhadap ajaran Islam, tetapi juga sebagai bentuk dorongan untuk lebih mencintai dan mengamalkan nilai-nilai Islam dalam kehidupan sehari-hari.</p>
+              <p>Olimpiade PAI ( Pendidikan Agama Islam ) adalah ajang perlombaan yang menguji pemahaman peserta terhadap materi Pendidikan Agama Islam, mulai dari Al-Qur’an, Akidah, Akhlak, Fikih, hingga Sejarah Kebudayaan Islam. Lomba ini tidak hanya menjadi sarana untuk mengukur sejauh mana pemahaman peserta terhadap ajaran Islam, tetapi juga sebagai bentuk dorongan untuk lebih mencintai dan mengamalkan nilai-nilai Islam dalam kehidupan sehari-hari.</p>
               {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
             </div>
           </div><!-- End Service Item -->
@@ -247,7 +247,7 @@
             <div class="service-item position-relative">
               <img src="{{ asset('assets/img/lomba4.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
                <h3>Poster Digital</h3>
-              <p>Lomba Poster Digital adalah ajang kreativitas visual yang dirancang untuk menguji kemampuan peserta dalam menyampaikan pesan melalui desain poster yang menarik dan komunikatif. Lomba ini menjadi sarana menyalurkan bakat seni digital sekaligus menyuarakan ide dan nilai positif secara visual, kreatif, dan inspiratif.</p>
+              <p>Poster Digital adalah ajang kreativitas visual yang dirancang untuk menguji kemampuan peserta dalam menyampaikan pesan melalui desain poster yang menarik dan komunikatif. Lomba ini menjadi sarana menyalurkan bakat seni digital sekaligus menyuarakan ide dan nilai positif secara visual, kreatif, dan inspiratif.</p>
               {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
             </div>
           </div><!-- End Service Item -->
@@ -265,7 +265,7 @@
             <div class="service-item position-relative">
               <img src="{{ asset('assets/img/lomba6.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
               <h3>MHQ</h3>
-              <p>Lomba MHQ (Musabaqah Hifzhil Qur’an) adalah ajang perlombaan menghafal Al-Qur’an yang dirancang untuk menguji kemampuan peserta dalam hafalan, ketepatan bacaan, dan kelancaran dalam melafalkan ayat-ayat suci Al-Qur’an. Lomba ini tidak hanya menjadi sarana untuk mengukur sejauh mana hafalan seseorang, tetapi juga sebagai bentuk motivasi dalam menjaga dan mencintai Al-Qur’an sebagai pedoman hidup.</p>
+              <p>MHQ (Musabaqah Hifzhil Qur’an) adalah ajang perlombaan menghafal Al-Qur’an yang dirancang untuk menguji kemampuan peserta dalam hafalan, ketepatan bacaan, dan kelancaran dalam melafalkan ayat-ayat suci Al-Qur’an. Lomba ini tidak hanya menjadi sarana untuk mengukur sejauh mana hafalan seseorang, tetapi juga sebagai bentuk motivasi dalam menjaga dan mencintai Al-Qur’an sebagai pedoman hidup.</p>
               {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
             </div>
           </div><!-- End Service Item -->
@@ -273,7 +273,7 @@
             <div class="service-item position-relative">
               <img src="{{ asset('assets/img/lomba7.png') }}" alt="Lomba 1" class="img-fluid rounded-4" style="width: 100%; height: auto; object-fit: cover;">
               <h3>Story Telling</h3>
-              <p>Story Telling adalah seseorang yang menyampaikan sebuah cerita melalui berbagai media seperti kata-kata, gambar, atau suara. Kegiatan ini dirancang untuk menyampaikan pesan dengan menarik, mengembangkan imajinasi dan kreatifitas, serta meningkatkan kemampuan berbahasa, dan berkomunikasi.</p>
+              <p>Storytelling adalah ajang untuk menampilkan kemampuan bercerita secara lisan dengan cara yang ekspresif, kreatif, dan komunikatif. Peserta tidak hanya menyampaikan isi cerita, tetapi juga menghidupkannya melalui intonasi suara, mimik wajah, gerakan tubuh, serta alat bantu seperti kostum atau properti.</p>
               {{-- <a href="service-details.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> --}}
             </div>
           </div><!-- End Service Item -->
@@ -1254,6 +1254,10 @@
 
 #registration {
     background: linear-gradient(180deg, #fff 0%, #d3d3d3 100%);
+}
+
+#maps {
+    background: linear-gradient(180deg, #d3d3d3 0%, #fff 100%) !important;
 }
 .testimonials .testimonial-item {
   background-color: var(--surface-color);

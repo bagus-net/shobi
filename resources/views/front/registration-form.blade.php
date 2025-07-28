@@ -20,7 +20,7 @@
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Alamat email aktif :</label>
-            <p class="text-muted">1 Email hanya untuk 1 Lomba</p> 
+            <p style="color: #d4c600;">1 Email hanya untuk 1 Lomba</p> 
             <input type="email" class="form-control" id="email" name="email" required>
           </div>
           <div class="mb-3">
@@ -55,6 +55,7 @@
             <input type="file" class="form-control" id="bukti_follow" name="bukti_follow" required>
           </div>
           <div class="mb-3">
+            <a href="https://supertwibbon.com/DIFEST8TH" target="_blank" class="btn btn-success mb-2" style="background-color: #d4c600; color: white; border: none; width: 100%; font-weight: bold;">Download Twibbon DIFEST 8th</a>
             <label for="bukti_posting_twibbon" class="form-label">Upload bukti posting twibbon :</label>
             <input type="file" class="form-control" id="bukti_posting_twibbon" name="bukti_posting_twibbon" required>
           </div>

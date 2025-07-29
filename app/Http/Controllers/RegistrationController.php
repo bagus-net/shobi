@@ -28,10 +28,10 @@ class RegistrationController extends Controller
             'email' => 'required|email|unique:registrations,email',
             'nomor_whatsapp' => 'required|string|max:20',
             'lomba' => 'required|string|max:255',
-            'pas_foto' => 'required|image|mimes:jpg,jpeg,png|max:2048',
-            'scan_kartu_pelajar' => 'required|file|mimes:pdf|max:5120',
-            'bukti_follow' => 'required|file|max:5120',
-            'bukti_posting_twibbon' => 'required|file|max:5120',
+            'pas_foto' => 'required|image|mimes:jpg,jpeg,png|max:2048', // 2MB
+            'scan_kartu_pelajar' => 'required|file|mimes:pdf|max:1024', // 1MB
+            'bukti_follow' => 'required|file|max:2048', // 2MB
+            'bukti_posting_twibbon' => 'required|file|max:2048', // 2MB
         ]);
 
         $pasFotoPath = $request->file('pas_foto')->store('registrations/pas_foto', 'public');
@@ -81,10 +81,10 @@ class RegistrationController extends Controller
             'email' => 'required|email|unique:registrations,email,'.$registration->id,
             'nomor_whatsapp' => 'required|string|max:20',
             'lomba' => 'required|string|max:255',
-            'pas_foto' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-            'scan_kartu_pelajar' => 'nullable|file|mimes:pdf|max:5120',
-            'bukti_follow' => 'nullable|file|max:5120',
-            'bukti_posting_twibbon' => 'nullable|file|max:5120',
+            'pas_foto' => 'nullable|image|mimes:jpg,jpeg,png|max:2048', // 2MB
+            'scan_kartu_pelajar' => 'nullable|file|mimes:pdf|max:1024', // 1MB
+            'bukti_follow' => 'nullable|file|max:2048', // 2MB
+            'bukti_posting_twibbon' => 'nullable|file|max:2048', // 2MB
         ]);
 
         if ($request->hasFile('pas_foto')) {

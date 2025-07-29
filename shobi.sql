@@ -11,7 +11,7 @@
  Target Server Version : 80030
  File Encoding         : 65001
 
- Date: 18/06/2025 16:26:36
+ Date: 29/07/2025 13:47:36
 */
 
 SET NAMES utf8mb4;
@@ -31,7 +31,7 @@ CREATE TABLE `failed_jobs`  (
   `failed_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `failed_jobs_uuid_unique`(`uuid` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of failed_jobs
@@ -46,7 +46,7 @@ CREATE TABLE `migrations`  (
   `migration` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of migrations
@@ -90,7 +90,7 @@ CREATE TABLE `personal_access_tokens`  (
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `personal_access_tokens_token_unique`(`token` ASC) USING BTREE,
   INDEX `personal_access_tokens_tokenable_type_tokenable_id_index`(`tokenable_type` ASC, `tokenable_id` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of personal_access_tokens
@@ -115,17 +115,18 @@ CREATE TABLE `registrations`  (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `registrations_email_unique`(`email` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 22 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of registrations
 -- ----------------------------
-INSERT INTO `registrations` VALUES (4, 'dad', 'dadad', 'bagussetyawan551@yahoo.com', '3131', 'dd', 'registrations/pas_foto/Tb8IawwcgXoNpQwq9idUIWc114TzJv0EiuUrnrEC.png', 'registrations/scan_kartu_pelajar/QCvRv8zL1eAIqabihZoXEqAhl9KaZxURjlmREHlD.pdf', 'registrations/bukti_follow/aI6IDaqT2cnhnkW0lpFnSnD5joBP1wWRtkvzgQ7C.png', 'registrations/bukti_posting_twibbon/7SdOqhELTbxStPPXbP0HQSqH9dJTERJTeD7O4S7q.png', '2025-06-18 07:52:54', '2025-06-18 07:52:54');
-INSERT INTO `registrations` VALUES (5, 'dadad', 'dadasdsdsadasd', 'sisimunaroh@gmail.com', '33131', 'dd', 'registrations/pas_foto/up5bweC0s2rLVyGNrBuzpizZCqWrVjxxam7NIGSz.png', 'registrations/scan_kartu_pelajar/l9cjwWSbX20sUBvXiuTWRAmKnUWo6oC1Gbz8k1R8.pdf', 'registrations/bukti_follow/VGjE4BMV8bMhEcLt56BdR0vpYAhGbPTpIZxat9wi.png', 'registrations/bukti_posting_twibbon/e6VrT8YFxX3QyVsQXqvG5wOdfNHMysCCyugQWKNO.png', '2025-06-18 07:55:05', '2025-06-18 07:55:05');
-INSERT INTO `registrations` VALUES (6, 'dada', 'cccc', 'dada@gmail.com', '3131', 'dd', 'registrations/pas_foto/vKl7HPsQQE1PbqtEY3ynIDywGlBN7tbBlF9JU1h3.png', 'registrations/scan_kartu_pelajar/gVtKskajGVElabG2xcIEGvNlomOvFdjQNpNyNww0.pdf', 'registrations/bukti_follow/dzP9j0x3VgymY1yyO1GMGHHsNOqpXJhVx14wISPK.png', 'registrations/bukti_posting_twibbon/a5j6Yshb9hD5GEa0WnfpfHeRyfEWf6UHGlVgaLco.png', '2025-06-18 09:09:30', '2025-06-18 09:09:30');
-INSERT INTO `registrations` VALUES (7, 'rrwr', 'dsd', 'hrd@muliagrand.com', '3131313', 'ddd', 'registrations/pas_foto/uqCEvQZNrSyCcC09R3iu4wqp1TJSgzTImdw8cE8y.png', 'registrations/scan_kartu_pelajar/dzhLDGth7sQ245YXjayJaJFqPlLVMlr7kfBP9STP.pdf', 'registrations/bukti_follow/BP7jIT07yVQaHy0h0TfRYjU4A2iTa4Zyyy3ZNIyo.png', 'registrations/bukti_posting_twibbon/sDdo4vzJOlGCpoOY7NtLNKTsJBpPfj4hDp4B674t.png', '2025-06-18 09:15:45', '2025-06-18 09:15:45');
-INSERT INTO `registrations` VALUES (8, 'a', 'b', 'bagus@muliagrand.com', '33131', '3131', 'registrations/pas_foto/jeUtVH9Gv9GMltGV5bbLo2cVfpsOtnZFswPdXibF.png', 'registrations/scan_kartu_pelajar/yGhNjZYbU1FKsbcyY8KFMYzD9ebTEKP7K8p14fiw.pdf', 'registrations/bukti_follow/RrtGG0VX6fzg8sL4iRo68Q0f6BPOqxAeUjSLfMi3.png', 'registrations/bukti_posting_twibbon/WtNJyMY1RO25OS6gEb4cHHYjdDvpzsEqmfPb1H8h.png', '2025-06-18 09:22:31', '2025-06-18 09:22:31');
-INSERT INTO `registrations` VALUES (9, 's', 'd', 'bagus2@muliagrand.com', '313', 'da', 'registrations/pas_foto/glPeKYu4leu4sCNfSx4YpJ2zWMHFIS3bIVij0HnT.png', 'registrations/scan_kartu_pelajar/sLLydNadZhLM7qbEaXarBeAJG5ApDuHJcSgfODf3.pdf', 'registrations/bukti_follow/PlLSFYriqDwHtUwOQlGYtx25PRYN2RbGb55LwWKu.png', 'registrations/bukti_posting_twibbon/ocEb13bPXT1hwa3CoCbH3Ifd56XgyeSGgjvSkINB.png', '2025-06-18 09:23:50', '2025-06-18 09:23:50');
+INSERT INTO `registrations` VALUES (11, 'ahmad', 'smpit', 'smpitdaaf@gmail.com', '081261161632', 'Olimpiade MIPA', 'registrations/pas_foto/EfyNHzKjLQJN3SC3IuKrEeh52QXlNxFLGkr2y7w5.png', 'registrations/scan_kartu_pelajar/mEtTDVcUbkeaRt8ELKEUeYkn0ylkhkTARkvDDpgN.pdf', 'registrations/bukti_follow/HBAJiWrgIMW0q9d1YCtQ0L4cIoXhv7VTIq6I86GT.png', 'registrations/bukti_posting_twibbon/zv7mP1uKBVLdAjQL3EUPTnUQ7isXENA2CHU3XdZP.jpg', '2025-06-19 15:04:04', '2025-06-19 15:04:04');
+INSERT INTO `registrations` VALUES (13, 'bgs', 'sda', 'bagus@muliagrand.com', '31313', 'Story Telling', 'registrations/pas_foto/HKz9nzelBqxt1BpuNZQe4Tn9D8kg9mwSBooJZQUU.png', 'registrations/scan_kartu_pelajar/lWmz1TF0cBU6MOfUSnIqskvtbe5j37GZD7O2lKhH.pdf', 'registrations/bukti_follow/NgLeCjvr5WHgM3kLvrtwByIIOU4yQ9RBD3h6t6oX.jpg', 'registrations/bukti_posting_twibbon/pJdyoG0Lbehx3LxN5H4P3GpwQoWhenwHfj52imF9.jpg', '2025-07-14 09:19:46', '2025-07-14 09:19:46');
+INSERT INTO `registrations` VALUES (16, 'ejaa', 'smpit', 'ejaaja@gmail.com', '024165665', 'MHQ', 'registrations/pas_foto/ajhzlm45z4DFVgURFsuPMmgxIszelVA8O1cIt0S8.jpg', 'registrations/scan_kartu_pelajar/FL2XoWb8broDwbk80L3ZUCwEZCPEMz5eaVfvdNoB.pdf', 'registrations/bukti_follow/VYg38I7ey1UaPLIdWt2tpdXVTNSkqoKLt0N7Q16p.png', 'registrations/bukti_posting_twibbon/lNQL1ngdIc6DAq9NTFILdgphbOF7KmNTJBXS0cGA.pdf', '2025-07-18 05:43:32', '2025-07-18 05:43:32');
+INSERT INTO `registrations` VALUES (17, 'rab', 'smpit', 'ahmad.hukma6@smp.belajar.id', '081113345562', 'MTQ', 'registrations/pas_foto/RwtLQw9A00Yd95VS0pySMgLptSY0hdBfsaYuTCos.jpg', 'registrations/scan_kartu_pelajar/SsVpxsX6DO5vR8fDKIM41rebFLgKD9KMr1lPHduU.pdf', 'registrations/bukti_follow/GHgMSn9SVHdsnymocLf6oMXQSILAECTNEDIaxDJF.png', 'registrations/bukti_posting_twibbon/hHtH1RMCTNwY1E9lKEtpVrPfQroiPngZzpLDgxXK.jpg', '2025-07-18 06:17:38', '2025-07-18 06:17:38');
+INSERT INTO `registrations` VALUES (18, 'dada', 'dada', 'bagussetyawan551@yahoo.com', '3131313131', 'Story Telling', 'registrations/pas_foto/XGfNdmrQL3SFQD2fnWCQDWGteGxKhL6TCb9CpLcl.png', 'registrations/scan_kartu_pelajar/hdHaHd7XDbsMYaGJnlvMxDK12lZCKxsX6janX8ZD.pdf', 'registrations/bukti_follow/9H2LPRPmfKG00O7zPN50mHZguQuKlwjcblSDNagq.pdf', 'registrations/bukti_posting_twibbon/0hINo1i1d94cgUUw67EI6saBkarhkuwrZnTJ5ALr.pdf', '2025-07-18 06:17:44', '2025-07-18 06:17:44');
+INSERT INTO `registrations` VALUES (19, 'ahmad', 'smpit', 'denirokhman72@guru.smp.belajar.id', '081113345562', 'MHQ', 'registrations/pas_foto/2MqtPS6KbEWrR9mWj8BdhjhBMU6cIkGd5VMPOL1I.jpg', 'registrations/scan_kartu_pelajar/2obqFPAg1W9lz93MZTDrV0jKczUVh8eRonW8u6oY.pdf', 'registrations/bukti_follow/SFCLj0CiHb5PS7UOViVi4OEoyN5hYvuevzo9yDrb.pdf', 'registrations/bukti_posting_twibbon/e7CEyxDW0M48BolhBljxeVFuT0vqYx82nHX4WjFI.pdf', '2025-07-18 07:51:29', '2025-07-18 07:51:29');
+INSERT INTO `registrations` VALUES (21, 'arab', 'mait', 'deni@gmail.com', '093828382917', 'Story Telling', 'registrations/pas_foto/WxtTX34CudXitMU9VOJ80kwVmRLQnVE9hCHRX7FC.png', 'registrations/scan_kartu_pelajar/Osad93R63DHqPcGbHgpqFKxyY7AE8cs8kkm48KqP.pdf', 'registrations/bukti_follow/8bpTyuDhkgQv7SYFLH5JU3757mdYJC0fujXZbz7U.pdf', 'registrations/bukti_posting_twibbon/ENrUldI9NwwkbyJlfhs9n35AkSmaB7inE63ngV5d.jpg', '2025-07-29 06:27:33', '2025-07-29 06:27:33');
 
 -- ----------------------------
 -- Table structure for users
@@ -143,10 +144,11 @@ CREATE TABLE `users`  (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `users_email_unique`(`email` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
+INSERT INTO `users` VALUES (1, 'admin', 'admin@difest.com', NULL, '$2y$10$yDWCwc463LDO4D8OYbcY6eB3Q5vmjAwqTGrVNLOkIHhLK9irLZENC', 'admin', NULL, '2025-06-20 04:16:04', '2025-06-20 04:16:04');
 
 SET FOREIGN_KEY_CHECKS = 1;

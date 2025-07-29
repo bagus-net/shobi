@@ -45,22 +45,77 @@
           <div class="mb-3">
             <label for="pas_foto" class="form-label">Upload PAS Foto 3 x 4 dalam format jpg atau png :</label>
             <input type="file" class="form-control" id="pas_foto" name="pas_foto" accept=".jpg,.jpeg,.png" required>
+            <small class="text-warning">Max 2MB</small>
           </div>
           <div class="mb-3">
             <label for="scan_kartu_pelajar" class="form-label">Upload scan kartu pelajar atau surat rekomendasi sekolah dalam format pdf :</label>
             <input type="file" class="form-control" id="scan_kartu_pelajar" name="scan_kartu_pelajar" accept=".pdf" required>
+            <small class="text-warning">Max 1MB</small>
           </div>
           <div class="mb-3">
             <label for="bukti_follow" class="form-label">Upload bukti follow @dafipesantren_official @official.difest :</label>
             <input type="file" class="form-control" id="bukti_follow" name="bukti_follow" required>
+            <small class="text-warning">Max 2MB</small>
           </div>
           <div class="mb-3">
             <a href="https://supertwibbon.com/DIFEST8TH" target="_blank" class="btn btn-success mb-2" style="background-color: #d4c600; color: white; border: none; width: 100%; font-weight: bold;">Download Twibbon DIFEST 8th</a>
             <label for="bukti_posting_twibbon" class="form-label">Upload bukti posting twibbon :</label>
             <input type="file" class="form-control" id="bukti_posting_twibbon" name="bukti_posting_twibbon" required>
+            <small class="text-warning">Max 2MB</small>
           </div>
           <button type="submit" class="btn btn-light">Daftar</button>
         </form>
+        <!-- Modal File Size Error -->
+        <div class="modal fade" id="fileSizeErrorModal" tabindex="-1" aria-labelledby="fileSizeErrorModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #fff3f3; color: #a40000; border:2px solid #a40000;">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="fileSizeErrorModalLabel"><i class="bi bi-exclamation-triangle-fill"></i> File Terlalu Besar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="fileSizeErrorMsg">
+                File yang Anda upload terlalu besar, jadi tidak bisa diupload.
+              </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // File size limits in bytes
+          const limits = {
+            pas_foto: 2 * 1024 * 1024, // 2MB
+            scan_kartu_pelajar: 1 * 1024 * 1024, // 1MB
+            bukti_follow: 2 * 1024 * 1024, // 2MB
+            bukti_posting_twibbon: 2 * 1024 * 1024 // 2MB
+          };
+          function showFileSizeModal(msg) {
+            const modalMsg = document.getElementById('fileSizeErrorMsg');
+            if (modalMsg) modalMsg.innerHTML = msg;
+            var modal = new bootstrap.Modal(document.getElementById('fileSizeErrorModal'));
+            modal.show();
+          }
+          // Per input file
+          [
+            {id: 'pas_foto', label: 'PAS Foto', limit: limits.pas_foto},
+            {id: 'scan_kartu_pelajar', label: 'Scan kartu pelajar', limit: limits.scan_kartu_pelajar},
+            {id: 'bukti_follow', label: 'Bukti follow', limit: limits.bukti_follow},
+            {id: 'bukti_posting_twibbon', label: 'Bukti posting twibbon', limit: limits.bukti_posting_twibbon}
+          ].forEach(function(input) {
+            var el = document.getElementById(input.id);
+            if (el) {
+              el.addEventListener('change', function() {
+                if (el.files && el.files[0] && el.files[0].size > input.limit) {
+                  showFileSizeModal('File <b>' + input.label + '</b> yang Anda upload terlalu besar, jadi tidak bisa diupload.<br>Silakan upload ulang file dengan ukuran sesuai ketentuan.');
+                  el.value = '';
+                }
+              });
+            }
+          });
+        });
+        </script>
       </div>
     </div>
   </div>

@@ -698,83 +698,87 @@
 
 
   <style>
+
     #about {
-    background-image: url('assets/img/bg-about.png'); /* Ganti dengan path yang sesuai */
-    background-size: cover; /* Menutupi seluruh area */
-    background-position: center; /* Pusatkan gambar */
-    background-repeat: no-repeat; /* Jangan ulang gambar */
-    padding: 60px 0; /* Atur padding sesuai kebutuhan */
-    color: white; /* Atur warna teks jika diperlukan */
-}
+        background-image: url('assets/img/bg-about.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 0;
+        color: white;
+    }
 
-/* .registration-form *, #maps, .maps *, .maps .card-title, .maps p {
-    font-family: 'Migra', serif !important;
-} */
-.registration-form label,
-.registration-form input,
-.registration-form textarea,
-.registration-form button {
-    font-family: 'Montserrat', sans-serif !important;
-}
-/* .registration-form-title {
-    font-family: 'Migra', serif !important;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #a40000;
-    margin-bottom: 1rem;
-    text-align: center;
-} */
+    @media (max-width: 767.98px) {
+        #about {
+            background-image: url('assets/img/bg-about-m.png');
+        }
+        #services {
+            background-image: url('assets/img/bg-lomba-mobile.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
 
-#registration {
-    background: linear-gradient(180deg, #fff 0%, #d3d3d3 100%);
-}
+    /* .registration-form *, #maps, .maps *, .maps .card-title, .maps p {
+        font-family: 'Migra', serif !important;
+    } */
+    .registration-form label,
+    .registration-form input,
+    .registration-form textarea,
+    .registration-form button {
+        font-family: 'Montserrat', sans-serif !important;
+    }
+    /* .registration-form-title {
+        font-family: 'Migra', serif !important;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #a40000;
+        margin-bottom: 1rem;
+        text-align: center;
+    } */
 
-#maps {
-    background: linear-gradient(180deg, #d3d3d3 0%, #fff 100%) !important;
-}
-.testimonials .testimonial-item {
-  background-color: var(--surface-color);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Ubah menjadi border-box untuk menghitung padding dan border dalam lebar */
-  padding: 30px;
-  margin: 30px 0; /* Hapus margin samping untuk membuatnya lebih lebar */
-  position: relative;
-  height: auto; /* Ubah menjadi auto untuk menyesuaikan tinggi konten */
-  width: 100%; /* Atur lebar menjadi 100% untuk mengisi kontainer */
-  max-width: 1200px; /* Atur lebar maksimum sesuai kebutuhan */
-  margin-left: auto; /* Pusatkan box */
-  margin-right: auto; /* Pusatkan box */
-}
+    #registration {
+        background: linear-gradient(180deg, #fff 0%, #d3d3d3 100%);
+    }
 
-.carousel img {
-    width: 100%; /* Pastikan gambar mengisi lebar kontainer */
-    height: auto; /* Pertahankan rasio aspek */
-}
-.service-item {
-    position: relative; /* Pastikan posisi relatif untuk elemen anak */
-    overflow: hidden; /* Sembunyikan bagian gambar yang melampaui batas card */
-}
-.service-item img {
-    width: 100%; /* Pastikan gambar mengisi lebar card */
-    height: 100%; /* Pastikan gambar mengisi tinggi card */
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-}
-#services {
-    background-image: url('assets/img/bg-lomba.png'); /* Ganti dengan path yang sesuai */
-    background-size: contain; /* Menutupi seluruh area */
-    background-position: center; /* Pusatkan gambar */
-    background-repeat: no-repeat; /* Jangan ulang gambar */
-    padding: 10px 0; /* Atur padding sesuai kebutuhan */
-}
+    #maps {
+        background: linear-gradient(180deg, #d3d3d3 0%, #fff 100%) !important;
+    }
+    .testimonials .testimonial-item {
+      background-color: var(--surface-color);
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      padding: 30px;
+      margin: 30px 0;
+      position: relative;
+      height: auto;
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-@media (max-width: 767.98px) {
-  #services {
-    background-image: url('assets/img/bg-lomba-mobile.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+    .service-item {
+        position: relative;
+        overflow: hidden;
+    }
+    .service-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #services {
+        background-image: url('assets/img/bg-lomba.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 10px 0;
+    }
 
 
     .animate-fade-in-scale {

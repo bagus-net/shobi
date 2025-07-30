@@ -3,7 +3,7 @@
 
     <!-- LOGO -->
     <div class="navbar-brand-box">
-        <a href="{{url('dashboard')}}" class="logo logo-dark">
+        <a href="{{url('/')}}" class="logo logo-dark">
              <span class="logo-sm">
                 <img src="{{ URL::asset('/assets/img/difest-logo.png') }}" alt="" height="30">
             </span>
@@ -12,7 +12,7 @@
             </span> 
         </a>
 
-        <a href="{{url('dashboard')}}" class="logo logo-light">
+        <a href="{{url('/')}}" class="logo logo-light">
             <span class="logo-sm">
                 <img src="{{ URL::asset('/assets/img/difest-logo.png') }}" alt="" height="30">
             </span>
@@ -95,13 +95,15 @@
                         <span>@lang('Laporan')</span>
                     </a>
                 </li> --}}
-<li class="menu-title">@lang('Setting')</li>
-                <li>
-                    <a href="{{url('users')}}">
-                        <i class="uil-users-alt"></i>
-                        <span>@lang('Users')</span>
-                    </a>
-                </li>
+@if(auth()->check() && auth()->user()->role === 'admin')
+    <li class="menu-title">@lang('Setting')</li>
+    <li>
+        <a href="{{url('/users')}}">
+            <i class="uil-users-alt"></i>
+            <span>@lang('Data Users')</span>
+        </a>
+    </li>
+@endif
                 {{-- @if (Auth::check())
                     <li>
                         <form action="{{ route('logout') }}" method="POST">
@@ -117,5 +119,6 @@
         </div>
         <!-- Sidebar -->
     </div>
+</div>
 </div>
 <!-- Left Sidebar End -->

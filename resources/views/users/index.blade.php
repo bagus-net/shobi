@@ -50,15 +50,18 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->email }}</td>
-                                <td>{{ $user->role }}</td>
                                 <td>
-                                        <a href="{{ route('users.edit', $user->id) }}" class="btn btn-warning btn-sm">Edit</a>
-                                        <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display:inline-block;">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
-                                        </form>
-                                    </td>
+                                    <span class="badge bg-{{ $user->role == 'admin' ? 'primary' : 'secondary' }} text-capitalize">{{ $user->role }}</span>
+                                </td>
+                                <td>
+                                    <a href="{{ route('users.show', $user->id) }}" class="btn btn-info btn-sm">Detail</a>
+                                    <a href="{{ route('users.edit', $user->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                    <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display:inline-block;">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
+                                    </form>
+                                </td>
                                 </tr>
                             @endforeach
 

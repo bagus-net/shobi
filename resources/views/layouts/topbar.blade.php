@@ -3,7 +3,7 @@
         <div class="d-flex">
             <!-- LOGO -->
             <div class="navbar-brand-box">
-                <a href="{{ url('dashboard') }}" class="logo logo-dark">
+                <a href="{{ url('/') }}" class="logo logo-dark">
                     <span class="logo-sm">
                         <img src="{{ URL::asset('/assets/img/difest-logo.png') }}" alt="" height="40">
                     </span>
@@ -12,7 +12,7 @@
                     </span>
                 </a>
 
-                <a href="{{ url('dashboard') }}" class="logo logo-light">
+                <a href="{{ url('/') }}" class="logo logo-light">
                     <span class="logo-sm">
                         <img src="{{ URL::asset('/assets/img/difest-logo.png') }}" alt="" height="40">
                     </span>

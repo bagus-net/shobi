@@ -33,29 +33,28 @@
                 <form action="{{ route('users.store') }}" method="POST" id="myForm">
                     @csrf
 
+
                     <div class="mb-3 row">
-                        <!-- Username Input -->
-                        <label for="name" class="col-md-2 col-form-label">name:</label>
+                        <label for="name" class="col-md-2 col-form-label">Name:</label>
                         <div class="col-md-10">
                             <input class="form-control" type="text" name="name" value="{{ old('name') }}" id="name" placeholder="Enter name" required>
                         </div>
                     </div>
 
                     <div class="mb-3 row">
-                        <!-- Username Input -->
-                        <label for="email" class="col-md-2 col-form-label">email:</label>
+                        <label for="email" class="col-md-2 col-form-label">Email:</label>
                         <div class="col-md-10">
-                            <input class="form-control" type="text" email="email" value="{{ old('email') }}" id="email" placeholder="Enter email" required>
+                            <input class="form-control" type="email" name="email" value="{{ old('email') }}" id="email" placeholder="Enter email" required>
                         </div>
                     </div>
 
                     <div class="mb-3 row">
-                        <!-- Role Selection -->
                         <label for="role" class="col-md-2 col-form-label">Role:</label>
                         <div class="col-md-10">
                             <select name="role" id="role" class="form-control" required>
-                                <option value="admin" {{ old('role') == 'admin' ? 'selected' : '' }}>Admin</option>
-                                
+                                @foreach($roles as $key => $label)
+                                    <option value="{{ $key }}" {{ old('role') == $key ? 'selected' : '' }}>{{ $label }}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>

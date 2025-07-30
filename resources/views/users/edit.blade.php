@@ -7,17 +7,25 @@
         <!-- Form untuk mengedit data user -->
         <form action="{{ route('users.update', $user->id) }}" method="POST">
             @csrf
-            @method('POST') <!-- Gunakan POST untuk mengupdate, dengan method spoofing -->
-            
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" class="form-control @error('username') is-invalid @enderror" value="{{ old('username', $user->username) }}" required>
-                @error('username')
+            @method('PUT')
+
+            <div class="form-group mb-3">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" value="{{ old('name', $user->name) }}" required>
+                @error('name')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
 
-            <div class="form-group">
+            <div class="form-group mb-3">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email', $user->email) }}" required>
+                @error('email')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="form-group mb-3">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror">
                 <small>Leave empty to keep the current password</small>
@@ -26,7 +34,7 @@
                 @enderror
             </div>
 
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label for="password_confirmation">Confirm Password</label>
                 <input type="password" name="password_confirmation" id="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror">
                 @error('password_confirmation')
@@ -34,12 +42,12 @@
                 @enderror
             </div>
 
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label for="role">Role</label>
                 <select name="role" id="role" class="form-control" required>
-                    <option value="1" {{ $user->role == '1' ? 'selected' : '' }}>Admin</option>
-                    <option value="2" {{ $user->role == '2' ? 'selected' : '' }}>Operator</option>
-                    <option value="3" {{ $user->role == '3' ? 'selected' : '' }}>Supervisor</option>
+                    @foreach($roles as $key => $label)
+                        <option value="{{ $key }}" {{ $user->role == $key ? 'selected' : '' }}>{{ $label }}</option>
+                    @endforeach
                 </select>
             </div>
 
